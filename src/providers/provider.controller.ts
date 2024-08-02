@@ -1,8 +1,8 @@
 import { Controller, Get, Query } from '@nestjs/common';
-import { ProviderService } from './providers/provider.service';
+import { ProviderService } from './provider.service';
 
-@Controller()
-export class AppController {
+@Controller('provider')
+export class ProviderController {
   constructor(private readonly providerService: ProviderService) {}
 
   @Get('generate')
